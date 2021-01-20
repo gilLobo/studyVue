@@ -4,7 +4,13 @@
 			<button @click="componente = 'Citacoes'">Citações</button>
 			<button @click="componente = 'Sobre'">Sobre</button>
 		</span>
-		<component :is="componente"/>
+		<!-- 
+			Para alterar o comportamento padrão do componente ser destruido e recriado
+			a medida que sai da tela, basta envolver na tag keep-alive
+		 -->
+		<keep-alive>
+			<component :is="componente"/>
+		</keep-alive>
 	</div>
 </template>
 
