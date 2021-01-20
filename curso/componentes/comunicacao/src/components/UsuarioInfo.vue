@@ -11,11 +11,11 @@ export default {
     props: {
         nome: {
             type: String,
-            default: 'Anonimo',
             // required: true
             // default: function() {
-            //     return Array(10).fill(0).join(',')
+                //     return Array(10).fill(0).join(',')
             // }
+            default: 'Anonimo',
         }
     },
     methods: {
